@@ -1,0 +1,56 @@
+:root {
+  background-color: #09090B;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #09090B;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #27272A;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: -100%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -18px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes underline-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.curved-text {
+  position: relative;
+  display: inline-block;
+}
+
+.curved-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-top: solid 3px white;
+  left: 0;
+  bottom: -10px;
+  border-radius: 50%;
+  height: 8px;
+  animation: underline-animation 2s forwards;
+}
