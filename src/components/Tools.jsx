@@ -58,14 +58,14 @@ const lowerMarquee = [
 
 const Tools = () => {
   return (
-    <div className="space-y-8 ">
+    <div className="space-y-8 px-4 md:px-0">
       <h1 className="text-lg text-white font-medium underline decoration-wavy underline-offset-8">Tools that i have used</h1>
-      <div className="container mx-auto space-y-6">
+      <div className="container px-4 md:mx-auto space-y-6">
         <div className="flex">
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {upperMarquee.map((item, index) => {
@@ -75,7 +75,7 @@ const Tools = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {upperMarquee.map((item, index) => {
@@ -88,7 +88,7 @@ const Tools = () => {
           <motion.div
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {lowerMarquee.map((item, index) => {
@@ -98,7 +98,7 @@ const Tools = () => {
           <motion.div
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {lowerMarquee.map((item, index) => {

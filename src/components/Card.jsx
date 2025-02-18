@@ -3,13 +3,16 @@ import { IoLogoGithub } from "react-icons/io";
 import { GoLinkExternal } from "react-icons/go";
 
 const Card = ({ image, title, description, techUsed, liveLink, gitLink }) => {
+  console.log(liveLink);
   return (
-    <div className="max-w-xl rounded overflow-hidden shadow-lg -tracking-tighter leading-6 ">
+    <div className="max-w-full md:max-w-xl h-auto overflow-hidden  -tracking-tighter leading-6">
+      <div className="relative">
         <img
-          className="w-full h-1/2 object-cover border-2"
+          className="w-full h-full object-cover rounded-xl"
           src={image}
           alt={`${title} image`}
         />
+      </div>
       <div className=" pt-4">
         <div className="font-bold text-md text-white">{title}</div>
       </div>
@@ -19,7 +22,7 @@ const Card = ({ image, title, description, techUsed, liveLink, gitLink }) => {
             key={index}
             className="inline-block  py-1 pr-1 text-xs font-medium text-[#9CA3AF]"
           >
-            {tech} /
+            {tech}
           </span>
         ))}
       </div>
@@ -31,7 +34,7 @@ const Card = ({ image, title, description, techUsed, liveLink, gitLink }) => {
           href={liveLink}
           target="_blank"
           rel="noopener noreferrer"
-          className=" text-[#9CA3AF] text-sm font-medium flex justify-center items-center"
+          className=" text-[#9CA3AF] text-sm font-medium flex justify-center items-center hover:text-white"
         >
           <GoLinkExternal className="mr-1" /> Live Demo
         </a>
@@ -39,7 +42,7 @@ const Card = ({ image, title, description, techUsed, liveLink, gitLink }) => {
           href={gitLink}
           target="_blank"
           rel="noopener noreferrer"
-          className=" text-[#9CA3AF] text-sm font-medium flex justify-center items-center"
+          className=" text-[#9CA3AF] text-sm font-medium flex justify-center items-center hover:text-white"
         >
           <IoLogoGithub className="mr-1" /> GitHub
         </a>

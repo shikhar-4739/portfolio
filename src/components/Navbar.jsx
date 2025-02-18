@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='mt-6'>
+    <div className='mt-6 px-4 md:px-0'>
       <a href=' '>
         <span >
             <img src='/logo2.png' alt='home' className="h-10 w-10 border border-[#27272A] rounded-lg" />

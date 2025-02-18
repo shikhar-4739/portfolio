@@ -55,12 +55,12 @@ const Contact = () => {
       });
   };
   return (
-    <div className="tracking-wide leading-6 flex flex-col md:flex-row">
-      <div className="w-2/5 space-y-4">
+    <div className="tracking-wide leading-6 flex flex-col md:flex-row p-4 md:p-0">
+      <div className="w-full md:w-2/5 space-y-4">
         <h1 className="text-lg text-white font-medium underline decoration-wavy underline-offset-8">
           Get in Touch
         </h1>
-        <p className="text-[#9CA3AF] text-base font-normal">
+        <p className="text-[#9CA3AF] text-sm md:text-base font-normal leading-6 tracking-wide">
           If you have any inquiries, please feel free to reach out. You can
           contact us via email at{" "}
           <a href="mailto:shikhar.varshney2003@gmail.com" className="text-white hover:underline  hover:underline-offset-8">shikhar.varshney2003@gmail.com</a>
@@ -94,9 +94,9 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-3/5 order-2 xl:order-none text-[#9CA3AF] ">
+      <div className="w-full md:w-3/5 order-2 xl:order-none text-[#9CA3AF] mt-10 md:mt-0 bg-[#131313] p-4 rounded-xl md:p-0 md:rounded-none md:bg-transparent">
         <form
-          className="flex flex-col gap-3 pl-4" onSubmit={handleSubmit}>
+          className="flex flex-col gap-3 md:pl-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Input
               type="text"
@@ -104,7 +104,7 @@ const Contact = () => {
               placeholder="Fullname"
               value={formData.Fullname}
               onChange={handleChange}
-              className="border rounded-xl border-[#27272A]"
+              className="border rounded-xl border-[#27272A] bg-[#09090B] text-sm md:text-base"
             />
             <Input
               type="phone"
@@ -112,7 +112,7 @@ const Contact = () => {
               placeholder="Phone number"
               value={formData.phone}
               onChange={handleChange}
-              className="border rounded-xl border-[#27272A]"
+              className="border rounded-xl border-[#27272A] bg-[#09090B] text-sm md:text-base"
             />
           </div>
           <Input
@@ -121,11 +121,11 @@ const Contact = () => {
               placeholder="Email address"
               value={formData.email}
               onChange={handleChange}
-                className="border rounded-xl border-[#27272A]"
+                className="border rounded-xl border-[#27272A] bg-[#09090B] text-sm md:text-base"
             />
           <Textarea
             name="message"
-            className="h-[100px] border rounded-xl border-[#27272A]"
+            className="h-[100px] border rounded-xl border-[#27272A] bg-[#09090B] text-sm md:text-base"
             placeholder="Type your message here."
             value={formData.message}
             onChange={handleChange}

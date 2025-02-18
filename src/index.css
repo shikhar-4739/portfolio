@@ -47,9 +47,9 @@
   content: "";
   position: absolute;
   width: 0;
-  border-top: solid 3px white;
+  border-top: solid 2px white;
   left: 0;
-  bottom: -10px;
+  bottom: -8px;
   border-radius: 50%;
   height: 8px;
   animation: underline-animation 2s forwards;

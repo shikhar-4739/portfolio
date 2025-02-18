@@ -9,9 +9,9 @@ import Tools from "./components/Tools";
 
 function App() {
   return (
-    <div className="w-3/5 mx-auto overflow-x-hidden">
+    <div className="w-full md:w-3/5 mx-auto overflow-x-hidden">
       <Navbar />
-      <div className="space-y-16">
+      <div className="space-y-10 md:space-y-16">
         <Description />
         <Tools />
         <Experience />
