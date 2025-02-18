@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "./button";
+import Button from "./Button";
 import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { RiJavascriptFill } from "react-icons/ri";
